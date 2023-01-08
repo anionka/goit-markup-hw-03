@@ -10,11 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="css/modern-normalize-mini.css">
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-        <header class="header">
+    <header class="header">
+        <div class="header__arrange container">
             <a class="logo" href="./index.html">
                 <span class="logo__prim">Web</span><span class="logo__sec">Studio</span>
             </a>
@@ -28,13 +30,16 @@
             <ul class="contact__list">
                 <li class="contact__item"> <a class="contact__link contact--email link__header"
                         href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-                <li class="contact__item"> <a class="contact__link contact--phone link__header" href="tel:0048111111111">+48 111
-                        111 111</a> </li>
+                <li class="contact__item"> <a class="contact__link contact--phone link__header"
+                        href="tel:0048111111111">+48
+                        111 111 111</a> </li>
             </ul>
-        </header>
-         <div class="filters">
+        </div>
+    </header>
+    <section class="menu section">
+        <div class="filters container">
             <ul class="filters__list">
-                <li class="filters__item "><button class="filters__button button__text--sec hover button--all"
+                <li class="filters__item"><button class="filters__button button__text--sec hover button--all"
                         type="button">Wszystkie</button></li>
                 <li class="filters__item "><button class="filters__button button__text--sec hover button--pages"
                         type="button">Strony</button></li>
@@ -42,12 +47,13 @@
                         type="button">Aplikacje</button></li>
                 <li class="filters__item "><button class="filters__button button__text--sec hover button--design"
                         type="button">Dizajn</button></li>
-                <li class="filters__item "><button
-                        class="filters__button button__text--sec hover button--marketing"
+                <li class="filters__item "><button class="filters__button button__text--sec hover button--marketing"
                         type="button">Marketing</button></li>
             </ul>
         </div>
-        <section class="cards">
+    </section>
+    <section class="cards section">
+        <div class="container">
             <ul class="cards__list">
                 <li class="card__item">
                     <img class="card__img" src="./images/pf_technocrack.jpg"
@@ -101,25 +107,29 @@
                     <p class="card__caption">Aplikacja</p>
                 </li>
             </ul>
-        </section>
-    <footer class="footer">
-        <a class="logo" href="./index.html">
-            <span class="logo__prim">Web</span><span class="logo__sec-footer">Studio</span>
-        </a>
-        <address class="address">
-            <ul class="address__list">
-                <li class="address__item">
-                    <a class="address__street link--hover" href="https://goo.gl/maps/AWv5r6P5fiDtamwy7" target="_blank">m.
-                        Warszawa, Aleje Jerozolimskie 21</a>
-                </li>
-                <li class="address__item">
-                    <a class="address__link link--hover" href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li class="address__item">
-                    <a class="address__link link--hover" href="+48111111111">+48 111 111 111</a>
-                </li>
-            </ul>
-        </address>
+        </div>
+    </section>
+    <footer class="footer section">
+        <div class="footer__arrange container">
+            <a class="logo" href="./index.html">
+                <span class="logo__prim">Web</span><span class="logo__sec-footer">Studio</span>
+            </a>
+            <address class="address">
+                <ul class="address__list">
+                    <li class="address__item">
+                        <a class="address__street link--hover" href="https://goo.gl/maps/AWv5r6P5fiDtamwy7"
+                            target="_blank">m. Warszawa, Aleje Jerozolimskie 21</a>
+                    </li>
+                    <li class="address__item">
+                        <a class="address__link link--hover" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="address__item">
+                        <a class="address__link link--hover" href="+48111111111">+48 111 111 111</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
+
 </html>
